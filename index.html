@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JustStreamIt</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1>JustStreamIt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Catégories</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SECTION -->
+        <main>
+            <!-- Best movie banner -->
+            <section id="highest-rated">
+                <h2>Best film</h2>
+                <div id="best-movie">highest_rated</div>
+                <button id="btn-more-info">Plus d'informations</button>
+            </section>
+
+            <!-- Best movies -->
+            <section id="best-movies" class="category">
+                <h2 class="category-title">Meilleurs films</h2>
+                <div class="carousel best-movies">
+                    <button class="btn-arrow arrow-left"><i class="fas fa-arrow-circle-left"></i></button>
+                    <div class="carousel-wrap">
+                        <div class="carousel-content" data-pos="0"></div>
+                    </div>
+                    <button class="btn-arrow arrow-right"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Sci-Fi movies -->
+            <section id="sci-fi" class="category">
+                <h2 class="category-title">Science-fiction</h2>
+                <div class="carousel sci-fi">
+                    <button class="btn-arrow arrow-left"><i class="fas fa-arrow-circle-left"></i></button>
+                    <div class="carousel-wrap">
+                        <div class="carousel-content" data-pos="0"></div>
+                    </div>
+                    <button class="btn-arrow arrow-right"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Animation movies -->
+            <section id="animation" class="category">
+                <h2 class="category-title">Animation</h2>
+                <div class="carousel animation">
+                    <button class="btn-arrow arrow-left"><i class="fas fa-arrow-circle-left"></i></button>
+                    <div class="carousel-wrap">
+                        <div class="carousel-content" data-pos="0"></div>
+                    </div>
+                    <button class="btn-arrow arrow-right"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Fantasy movies -->
+            <section id="fantasy" class="category">
+                <h2 class="category-title">Fantastique</h2>
+                <div class="carousel fantasy">
+                    <button class="btn-arrow arrow-left"><i class="fas fa-arrow-circle-left"></i></button>
+                    <div class="carousel-wrap">
+                        <div class="carousel-content" data-pos="0"></div>
+                    </div>
+                    <button class="btn-arrow arrow-right"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Modal Box -->
+        <div id="modal-box" class="modal">
+            <div class="modal-content">
+                <i id="btn-close" class="fas fa-times"></i>
+                <div id="movie-info">movie_info</div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <h2>JustStreamIt</p>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="./main.js"></script>
+    </body>
+</html>
